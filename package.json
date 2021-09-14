@@ -10,7 +10,6 @@
     "format": "yarn prettier --ignore-path .gitignore --write '**/*.tsx'"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@web3-react/core": "^6.1.9",

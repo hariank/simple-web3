@@ -5,7 +5,7 @@ const Connect = (): any => {
   const { active, account, activate, deactivate } = useWeb3React();
 
   const injected = new InjectedConnector({
-    supportedChainIds: [1, 3, 4, 5, 42],
+    supportedChainIds: [1],
   });
 
   async function handleConnect() {

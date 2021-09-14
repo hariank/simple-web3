@@ -1,11 +1,12 @@
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { useWeb3React } from "@web3-react/core";
 
-const Connect = () => {
-  const { active, account, library, connector, activate, deactivate } =
-    useWeb3React();
+const Connect = (): any => {
+  const { active, account, activate, deactivate } = useWeb3React();
 
-  const injected = new InjectedConnector({ supportedChainIds: [1] });
+  const injected = new InjectedConnector({
+    supportedChainIds: [1, 3, 4, 5, 42],
+  });
 
   async function handleConnect() {
     await activate(injected);

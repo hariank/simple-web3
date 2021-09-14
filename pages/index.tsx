@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { Web3ReactProvider } from "@web3-react/core";
 import { providers } from "ethers";
 
-function App() {
+function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -28,10 +28,10 @@ function getLibrary(provider: any): providers.Web3Provider {
   return library;
 }
 
-export default function () {
+export default function App () {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
-      <App />
+      <Home />
     </Web3ReactProvider>
   );
 }
